@@ -2,18 +2,95 @@
     padding: 0;
     margin: 0;
 }
-body{
-    background-color: rgb(45, 26, 78);
-    min-height: 100vh;
-    min-width: 100vw;
-    overflow: hidden;
-}
+
 .glow{
     position: absolute;
     width: 400px;
     height: 400px;
     border-radius: 50%;
-    background: radial-gradient(circle, rgba(111, 76, 172, 0.8), rgba(71, 66, 85, 0));
+    background: radial-gradient(circle, rgba(123, 88, 184, 0.8), rgba(71, 66, 85, 0));
     pointer-events: none;
     filter: blur(150px);
+}
+
+.h1{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+body{
+    display: flex;
+    background-color: rgb(37, 22, 65);
+    min-height: 100vh;
+    width: 90vw;
+    position :relative;
+    justify-content: center;
+    align-items: center;
+    margin: auto auto;
+    overflow-y: auto;
+    overflow-x: none;
+    border: 1px solid white;
+}
+.container-header{
+    position: relative;
+    width: 50%;
+    height: 90vh;
+}
+.header-portafolio{
+    display: flex;
+    color: azure;
+    width: 50%;
+    height: 90vh;
+    flex-direction: column;
+    justify-content: space-around;
+    position: fixed;
+}
+.main-portafolio{
+    width: 50%;
+    height: 100vh;
+   position: relative;
+}
+.icon-redes{
+    width: 30px;
+    height: 30px;
+}
+
+.redes a:not(:last-child){
+    margin-right: 20px;
+}
+.nav-menu ul{
+    margin: 0;
+    padding: 0;
+}
+.nav-menu ul li:not(:last-child){
+    margin-bottom: 20px;
+}
+.nav-menu ul li{
+    list-style-type: none;
+    position: relative;
+    padding-left: 50px;
+}
+.nav-menu ul li::before{
+    left: 0;
+    position: absolute;
+    content: '———';
+    font-size: 15px;
+    margin-right: 10px;
+    transform-origin: left;
+}
+
+.nav-menu ul li:hover{
+    padding-left: 100px;
+    cursor: pointer;
+    &&::before{
+        transform: scaleX(2);
+        transition: transform 0.2s ease;
+    }
+}
+.main-about{
+    color: white;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid red;
 }
