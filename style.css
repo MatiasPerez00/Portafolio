@@ -1,9 +1,9 @@
-*{
+* {
     padding: 0;
     margin: 0;
 }
 
-.glow{
+.glow {
     position: absolute;
     width: 400px;
     height: 400px;
@@ -13,15 +13,16 @@
     filter: blur(150px);
 }
 
-.h1{
+.h1 {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
-body{
+
+body {
     display: flex;
     background-color: rgb(37, 22, 65);
     min-height: 100vh;
     width: 90vw;
-    position :relative;
+    position: relative;
     justify-content: center;
     align-items: center;
     margin: auto auto;
@@ -29,12 +30,14 @@ body{
     overflow-x: none;
     border: 1px solid white;
 }
-.container-header{
+
+.container-header {
     position: relative;
     width: 50%;
     height: 90vh;
 }
-.header-portafolio{
+
+.header-portafolio {
     display: flex;
     color: azure;
     width: 50%;
@@ -43,32 +46,38 @@ body{
     justify-content: space-around;
     position: fixed;
 }
-.main-portafolio{
+
+.main-portafolio {
     width: 50%;
     height: 100vh;
-   position: relative;
+    position: relative;
 }
-.icon-redes{
+
+.icon-redes {
     width: 30px;
     height: 30px;
 }
 
-.redes a:not(:last-child){
+.redes a:not(:last-child) {
     margin-right: 20px;
 }
-.nav-menu ul{
+
+.nav-menu ul {
     margin: 0;
     padding: 0;
 }
-.nav-menu ul li:not(:last-child){
+
+.nav-menu ul li:not(:last-child) {
     margin-bottom: 20px;
 }
-.nav-menu ul li{
+
+.nav-menu ul li {
     list-style-type: none;
     position: relative;
     padding-left: 50px;
 }
-.nav-menu ul li::before{
+
+.nav-menu ul li::before {
     left: 0;
     position: absolute;
     content: '———';
@@ -77,15 +86,17 @@ body{
     transform-origin: left;
 }
 
-.nav-menu ul li:hover{
+.nav-menu ul li:hover {
     padding-left: 100px;
     cursor: pointer;
-    &&::before{
+
+    &&::before {
         transform: scaleX(2);
         transition: transform 0.2s ease;
     }
 }
-.main-about{
+
+.main-about {
     color: white;
     min-height: 100vh;
     display: flex;
