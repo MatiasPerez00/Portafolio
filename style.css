@@ -1,6 +1,7 @@
 * {
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 
 .glow {
@@ -19,6 +20,7 @@
 }
 
 body {
+    box-sizing: border-box;
     display: flex;
     background-color: rgb(37, 22, 65);
     min-height: 100vh;
@@ -29,20 +31,18 @@ body {
     margin: auto auto;
     overflow-y: auto;
     overflow-x: none;
-    border: 1px solid white;
 }
 
 .container-aside {
     width: 50%;
-    height: 90%;
+    height: 90vh;
     margin: auto 0;
-    border: 5px solid green;
+
 }
 
 .container-main {
     width: 50%;
     min-height: 100vh;
-    border: 5px solid yellow;
 }
 
 .aside-portafolio {
@@ -54,12 +54,19 @@ body {
     justify-content: space-around;
     position: fixed;
     top: 0;
+    box-sizing: border-box;
+    padding-left: 20px;
 }
 
 .main-portafolio {
     width: 90%;
     height: 100vh;
     position: relative;
+}
+
+.ul-menu {
+    list-style-type: none;
+    width: 250px !important;
 }
 
 .icon-redes {
