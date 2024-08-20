@@ -85,6 +85,14 @@ body {
     margin-right: 20px;
 }
 
+.icon-redes {
+    transition: transform 0.1s ease-in-out;
+}
+
+.icon-redes:hover {
+    transform: translateY(-2px);
+}
+
 .nav-menu ul {
     margin: 0;
     padding: 0;
@@ -148,13 +156,31 @@ body {
 
     &&:hover {
         background-color: #17264B;
-    }
 
+    }
+}
+
+.card-proyects:hover h5 {
+    color: #52d5e0;
 }
 
 .personal-proyects {
     width: 100%;
     margin-top: 20px;
+}
+
+.flecha-tarjeta {
+    width: 20px;
+    height: 15px;
+    font-size: 20px;
+    transform: translateY(-3px);
+    transition: transform 0.1s ease;
+
+}
+
+.card-proyects:hover .flecha-tarjeta {
+    transform: translateY(-6px) translateX(4px);
+    color: #52d5e0;
 }
 
 .image-card {
@@ -173,7 +199,7 @@ body {
     padding: 4px 12px;
     border-radius: 40%;
     margin-bottom: 5px;
-    color: #46ABB4;
+    color: #48B1BA;
     font-weight: bold;
 }
 
@@ -185,4 +211,6 @@ body {
     list-style: none;
     text-decoration: none;
     color: beige;
+    display: flex;
+    margin-right: 4px;
 }
