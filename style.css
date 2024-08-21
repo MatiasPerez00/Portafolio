@@ -34,6 +34,10 @@ body {
     overflow-x: hidden;
 }
 
+.nombre :not(:last-child) {
+    margin-bottom: 25px;
+}
+
 .container-aside {
     width: 50%;
     height: 90vh;
@@ -268,4 +272,17 @@ body {
     left: 50%;
     transform: translateX(-50%);
     margin: 0;
+}
+
+
+.final {
+    color: white;
+}
+
+.final a {
+    text-decoration-color: #52d5e0;
+}
+
+.final a:hover {
+    color: #52d5e0;
 }
