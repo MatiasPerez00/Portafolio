@@ -131,6 +131,24 @@ body {
     }
 }
 
+.cv {
+    list-style: none;
+    text-decoration: none;
+    background-color: #183656;
+    padding: 5px 8px;
+    width: 200px;
+    text-align: center;
+    color: white;
+    border-radius: 10px;
+    transition: transform 0.2s ease;
+}
+
+.cv:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: transform 0.2s ease;
+}
+
 .main-about {
     color: white;
     width: 100%;
