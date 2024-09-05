@@ -35,14 +35,14 @@ body {
 }
 
 .nombre :not(:last-child) {
-    margin-bottom: 25px;
+    border: 5x solid white !important;
+    margin: 0 auto 25px;
 }
 
 .container-aside {
     width: 50%;
     height: 90vh;
     margin: auto 0;
-
 }
 
 .container-main {
@@ -295,6 +295,7 @@ body {
 
 .final {
     color: white;
+    padding-bottom: 20px;
 }
 
 .final a {
@@ -303,4 +304,43 @@ body {
 
 .final a:hover {
     color: #52d5e0;
+}
+
+@media (max-width: 768px) {
+    body {
+        flex-direction: column;
+    }
+
+    .container-aside {
+        width: 90vw;
+        height: 90vh;
+        margin: auto 0;
+        min-height: 90vh;
+        border: 1px solid red;
+    }
+
+    .aside-portafolio {
+        position: absolute;
+        width: 90%;
+        margin: auto auto;
+        height: 90vh;
+        justify-content: space-around;
+    }
+
+    .nav-menu {
+        display: none;
+    }
+
+    .container-main {
+        width: 90vw;
+        min-height: 100vh;
+        margin: 0 auto;
+        border: 1px solid white;
+    }
+}
+
+@media (min-width: 840px) {
+    .nombre p {
+        width: 90%;
+    }
 }
