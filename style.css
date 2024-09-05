@@ -35,7 +35,6 @@ body {
 }
 
 .nombre :not(:last-child) {
-    border: 5x solid white !important;
     margin: 0 auto 25px;
 }
 
@@ -316,7 +315,6 @@ body {
         height: 90vh;
         margin: auto 0;
         min-height: 90vh;
-        border: 1px solid red;
     }
 
     .aside-portafolio {
@@ -335,7 +333,6 @@ body {
         width: 90vw;
         min-height: 100vh;
         margin: 0 auto;
-        border: 1px solid white;
     }
 }
 
